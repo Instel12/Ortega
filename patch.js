@@ -1,5 +1,8 @@
 const featuredList = document.getElementsByClassName("slick-track")[0];
-const headerBar = document.getElementsByClassName("box-header")[0];
+document.getElementsByClassName("box-header")[0].innerHTML = `
+<h4>Featured Projects</h4>
+<p><a target="_blank" href="https://discord.gg/c6ZmNXsfzq" onclick="alert('This link is not official to Scratch.')">Discord</a></p>
+`;
 
 let temp = "";
 
@@ -38,10 +41,5 @@ async function getStuff() {
 
     featuredList.innerHTML = temp;
 }
-
-headerBar.innerHTML = `
-<h4>Featured Projects</h4>
-<p><a target="_blank" href="https://discord.gg/c6ZmNXsfzq" onclick="alert('This link is not official to Scratch.')">Discord</a></p>
-`
 
 getStuff();
