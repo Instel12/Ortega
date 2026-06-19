@@ -24,7 +24,7 @@ function CreateTile(projectid, author, title) {
 }
 
 async function getStuff() {
-    const res = await fetch("http://127.0.0.1:5500/featured");
+    const res = await fetch("https://raw.githubusercontent.com/Instel12/Ortega/refs/heads/main/featured");
     const jsonres = await res.json();
 
     temp = "";
